@@ -1,0 +1,55 @@
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+    margin: 0;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  #bookCover {
+    margin-top: 20px;
+    width: 200px;
+    height: 300px;
+    transition: transform 1s ease-out;  /* Transition for smooth stop */
+    align-items: center;
+  }
+  
+  #bookCover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin:auto;
+  }
+  
+  button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Spinning animation */
+  .book-cover.spinning {
+    animation: spin 1s infinite;  /* Infinite spinning until stopped */
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
